@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        /* system */
+
+        body {
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        #main {
+            margin: 0 auto;
+            width: 50%;
+            background-color: rgb(168, 214, 251);
+            height: 100%;
+        }
+
+        @media screen and (max-width: 1000px) {
+            #main {
+                width: 100%;
+            }
+        }
+
+        /* logo */
+        #title {
+            margin: 0 auto;
+            max-width: 300px;
+            display: flex;
+            flex-direction: column;
+            border: 3px solid black;
+            align-items: center;
+            border-radius: 10px;
+            background-color: aqua;
+            box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, .1);
+        }
+
+        #title h1 {
+            padding: 0;
+            margin: 0;
+        }
+
+        #title h1:first-child {
+            width: 100%;
+            text-align: center;
+            border-bottom: 5px solid black;
+        }
+
+        /* form */
+        #introduction h1, #introduction div{
+            text-align: center;
+        }
+
+        #registration-form {
+            margin: 0 auto;
+            width: 80%;
+        }
+
+        #registration-form div {
+            display: flex;
+            margin-top: 3px;
+        }
+
+        #registration-form div label:first-child {
+            flex-basis: 175px;
+        }
+
+        #registration-form div #radio-options {
+            display: flex;
+            flex-flow: column wrap;
+            max-height: 80px;
+            min-width: 400px;
+        }
+
+        #registration-form div #checkbox-options {
+            display: flex;
+            flex-flow: column wrap;
+            max-height: 60px;
+            min-width: 320px;
+        }
+
+        #registration-form #submit-options {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        #registration-form #submit-options input {
+            margin: 2px;
+        }
+
+    </style>
+</head> 
+<body>
+    <div id="main">
+        <div id="title">
+            <h1>Jackson</h1>
+            <h1>Electronics</h1>
+        </div>
+        <div id="introduction">
+            <h1>Registration Form</h1>
+            <div>Register your Jackson Electronics product here</div>
+        </div>
+        <form action="#" id="registration-form">
+            <div>
+                <label for="first-name">First name:</label>
+                <input type="text" name="first-name" id="first-name" size="15">
+                <label for="last-name">Last name:</label>
+                <input type="text" name="last-name" id="last-name">
+            </div>
+            <div>
+                <label for="address1">Address #1:</label>
+                <input type="text" name="address1" id="address1" size="30">
+            </div>
+            <div>
+                <label for="address2">Address #2:</label>
+                <input type="text" name="address2" id="address2" size="30">
+            </div>
+            <div>
+                <label for="city">City:</label>
+                <input type="text" name="city" id="city" size="20">
+                <label for="state">State:</label>
+                <input type="text" name="state" id="state" size="5">
+                <label for="zip">Zip:</label>
+                <input type="text" name="zip" id="zip" size="10">
+            </div>
+            <div>
+                <label for="country">Country:</label>
+                <input type="text" name="country" id="country" placeholder="United States">
+            </div>
+            <hr>
+            <div>
+                <label for="product">Product:</label>
+                <select name="product" id="product">
+                    <option value="1">Smartphones</option>
+                    <option value="2">Laptops</option>
+                    <option value="3">Headphones</option>
+                    <option value="4">Digital Cameras</option>
+                    <option value="5">PlayStation</option>
+                    <option value="6">Refrigerators</option>
+                </select>
+            </div>
+            <div>
+                <label for="date-purchased">Date Purchased:</label>
+                <input type="text" name="date-purchased" id="date-purchased">
+            </div>
+            <div>
+                <label for="serial">Serial #:</label>
+                <input type="text" name="serial" id="serial">
+            </div>
+            <div>
+                <label for="used-for">Used for:</label>
+                <div id="radio-options">
+                    <div><input type="radio" name="used-for" id="used-for1" value="1"><label for="used-for1">Home</label></div>
+                    <div><input type="radio" name="used-for" id="used-for2" value="2"><label for="used-for2">Business</label></div>
+                    <div><input type="radio" name="used-for" id="used-for3" value="3"><label for="used-for3">Government</label></div>
+                    <div><input type="radio" name="used-for" id="used-for4" value="1"><label for="used-for4">Educational Institution</label></div>
+                    <div><input type="radio" name="used-for" id="used-for5" value="1"><label for="used-for5">Other</label></div>
+                </div>
+            </div>
+            <div>
+                <label for="system">System (check all that apply): </label>
+                <div id="checkbox-options">
+                    <div><input type="checkbox" name="system1" id="system1" value="1"><label for="system1">Windows</label></div>
+                    <div><input type="checkbox" name="system2" id="system2" value="2"><label for="system2">Macintosh</label></div>
+                    <div><input type="checkbox" name="system3" id="system3" value="3"><label for="system3">UNIX</label></div>
+                    <div><input type="checkbox" name="system4" id="system4" value="4"><label for="system4">Other</label></div>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <label for="comments">Comments?</label>
+                <textarea name="comments" id="comments" cols="50" rows="7"></textarea>
+            </div>
+            <div id="submit-options">
+                <input type="submit" value="Click to register">
+                <input type="submit" value="Click to cancel">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

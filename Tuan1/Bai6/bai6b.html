@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        fieldset:nth-child(1) label:first-child {
+            display: inline-block;
+            width: 75px;
+        }
+
+        fieldset:nth-child(1) div {
+            margin-top: 3px;
+        }
+
+        fieldset:nth-child(2) label:first-child {
+            display: inline-block;
+            width: 175px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <form action="#" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Your message:</legend>
+            <div>
+                <label for="to">To</label>
+                <input type="email" name="to" id="to" placeholder="Example Cafe">
+            </div>
+            <div>
+                <label for="your-email">Your email</label>
+                <input type="email" name="your-email" id="your-email">
+            </div>
+            <div>
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="50" rows="10"></textarea>
+            </div>
+            <div>
+                <label for="attached-file">Attach File</label>
+                <input type="file" name="attached-file" id="attached-file">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>How you found us</legend>
+            <div>
+                <label for="how-did-you-hear-about-us">How did you hear about us</label>
+                <select name="how-did-you-hear-about-us" id="how-did-you-hear-about-us">
+                    <option value="1">Google</option>
+                    <option value="2">Facebook</option>
+                    <option value="3">Youtube</option>
+                    <option value="4">Friend or Family</option>
+                    <option value="5">Banner Ads</option>
+                    <option value="6">Other</option>
+                </select>
+            </div>
+            <div>
+                <label for="newsletter">Newsletter</label>
+                    <input type="checkbox" name="newsletter" id="newsletter">
+                    <label for="newsletter">Ensure this box is checked if you would like to receive email updates</label>
+            </div>
+        </fieldset>
+        <div>
+            <button type="submit">Send message</button>
+        </div>
+    </form>
+</body>
+</html>
