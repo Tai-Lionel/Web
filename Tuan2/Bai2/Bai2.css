@@ -1,0 +1,168 @@
+body {
+    background-color: #f1f1f1;
+    font-size: 20px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* header */
+
+#logo-container {
+    display: flex;
+    background: url('images/background.png');
+}
+
+#logo-container img {
+    width: 125px;
+}
+
+#logo-container #title-container {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#logo-container #title-container>* {
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+/* nav */
+nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: #afafad;
+}
+
+nav ul li {
+    list-style-type: none;
+    padding: 10px 60px 10px 15px;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li:first-child a {
+    color: black;
+}
+
+/* section aside container */
+#section-aside-container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#section-aside-container section {
+    flex: 3 600px;
+}
+
+#section-aside-container aside {
+    flex: 1 200px;
+}
+
+/* section */
+#main-section {
+    padding: 15px;;
+    display: flex;
+    flex-direction: column;
+}
+
+#main-section article {
+    margin: 20px 0;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#main-section article .image-wrapper {
+    padding: 10px;
+    border: 1px solid #dcdcdc;
+}
+
+#main-section article .image-wrapper p {
+    margin: 0;
+}
+
+#main-section img {
+    width: 500px;
+}
+
+#main-section article .detail {
+    margin: 0 20px;
+}
+#main-section article .detail :nth-child(1) {
+    margin: 20px 0;
+}
+#main-section article .detail :nth-child(2) {
+    color: red;
+    font-size: 1.1em;
+    margin: 0;
+}
+
+aside #section1 *, aside #section2 h2 {
+    color: red;
+}
+
+aside #section1 {
+    margin-bottom: 75px;
+}
+
+aside #section1 ul {
+    margin: 0;
+    padding: 0;
+}
+
+aside #section1 ul li {
+    list-style-type: none;
+    padding: 20px 0 20px 20px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+aside #section1 ul li a {
+    text-decoration: none;
+    display: block;
+}
+
+aside #section2 p span{
+    display: block;
+}
+
+footer {
+    padding: 0;
+    margin: 0;
+}
+
+footer p {
+    background-color: #b2aeab;
+    margin: 0;
+    padding: 20px 0 0 20px;
+    color: white;
+}
+
+@media screen and (max-width: 1000px) {
+    #section-aside-container {
+        flex-direction: column;
+    }
+    #main-section {
+        padding: 0;
+    }
+    #main-section article {
+        flex-flow: row wrap;
+    }
+    #main-section img {
+        width: 100%;
+    }
+}
