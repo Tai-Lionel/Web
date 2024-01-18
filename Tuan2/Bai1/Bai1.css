@@ -1,3 +1,8 @@
+body, .container {
+    margin: 0;
+    padding: 0;
+}
+
 #title {
     text-transform: uppercase;
     color: red;
@@ -183,4 +188,5 @@
     text-align: center;
     font-size: 1.2em;
     font-style: italic;
+    margin: 0;
 }
