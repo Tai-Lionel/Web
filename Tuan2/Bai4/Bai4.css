@@ -1,0 +1,124 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding-right: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-section-footer-container {
+    display: flex;
+    border-top: 3px solid gold;
+}
+
+.nav-section-footer-container .nav {
+    flex: 1;
+}
+
+.nav-section-footer-container .section-footer-container {
+    flex: 7;
+}
+
+.nav {
+    margin: 0 20px 0 0;
+    background: url('images/back.jpg');
+}
+
+.nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul li {
+    list-style-type: none;
+    margin: 0.25em 2em 0.5em 0.5em;
+    padding: 0.25em 0.5em 0.25em 0;
+    border-bottom: 2px dotted goldenrod;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    display: block;
+}
+
+.section {
+    color: #c5999a;
+}
+
+.section h2, .section h3 {
+    color: #f5a950;
+}
+
+.section .note {
+    float: right;
+    margin: 10px;
+    background: #fffef1;
+    border-top: 5px solid #f5a42e;
+    border-left: 5px solid #f5a42e;
+    border-bottom: 5px solid #a76b10;
+    border-right: 5px solid #a76b10;;
+    color: #bd6264;
+}
+
+.section-footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer {
+    color: goldenrod;
+    border-top: 3px solid gold;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.footer span {
+    margin: 0 5px;
+}
+
+.position {
+    position: relative;
+    width: 600px;
+    padding: 0;
+    margin: 0;
+}
+
+.position img {
+    width: 600px;
+}
+
+.position .note {
+    width: 175px;
+    position: absolute;
+    background-color: #fffef1;
+    padding: 5px;
+    border-top: 5px solid grey;
+    border-left: 5px solid grey;
+    border-right: 2px solid grey;
+    border-bottom: 2px solid grey;
+}
+
+.position .note1 {
+    top: -50px;
+    right: -100px;
+}
+
+.position .note2 {
+    top: 300px;
+    left: -50px;
+}
+
+.position .note3 {
+    right: -50px;
+    bottom: 200px;
+}
