@@ -117,7 +117,7 @@ aside #section1 *, aside #section2 h2 {
 }
 
 aside #section1 {
-    margin-bottom: 75px;
+    margin-bottom: 50px;
 }
 
 aside #section1 ul {
@@ -164,5 +164,9 @@ footer p {
     }
     #main-section img {
         width: 100%;
+    }
+
+    aside #section1 {
+        margin-bottom: 20px;
     }
 }
