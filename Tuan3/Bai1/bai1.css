@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    color: white;
+    background-color: #6dc5ed;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    border-bottom: 5px dotted white;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav ul li {
+    list-style-type: none;
+    font-weight: bold;
+    padding: 15px 60px 15px 0;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    display: block;
+    color: white;
+}
+
+.nav p {
+    border: 1px solid black;
+    font-size: 30px;
+    align-self: center;
+    font-weight: bold;
+    text-shadow: -1px -1px 5px blue;
+}
+
+.section-aside-container {
+    display: flex;
+}
+
+.aside img {
+    max-width: 600px;
+}
